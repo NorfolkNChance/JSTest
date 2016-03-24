@@ -1,4 +1,5 @@
 // RomanNumberGenerator
+// There is a more elegant method using RegEx.
 
 // The key is to have the subtractive principle values as the data set (900, 400, 90, 40, 9, 4).
 // See http://www.roman-numerals.org/subtract.html for more information.
@@ -20,6 +21,7 @@ var RomanNumeralGenerator = {
             for( var i = 0; i < romanNumeralsIntegersArray.length; i++ ) {
                 
                 while( number >= romanNumeralsIntegersArray[i] ) {
+                    
                     // Subtract tested number.
                     number -= romanNumeralsIntegersArray[i];
                     
